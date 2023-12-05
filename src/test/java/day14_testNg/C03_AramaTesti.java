@@ -41,6 +41,7 @@ public class C03_AramaTesti {
 
     @Test(dependsOnMethods = "testOtomasyonuTesti")
     public void aramaTesti(){
+
         // 2- phone icin arama yapip
         //    arama sonucunda urun bulunabildigini test edin
         WebElement aramaKutusu = driver.findElement(By.id("global-search"));
@@ -56,6 +57,7 @@ public class C03_AramaTesti {
 
     @Test(dependsOnMethods = "aramaTesti")
     public void urunIsimTesti(){
+
         // 3- ilk urune tiklayip
         //    acilan urun sayfasinda, urun isminin case sensitive olmadan phone icerdigini test edin
 

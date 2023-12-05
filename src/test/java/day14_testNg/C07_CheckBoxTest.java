@@ -11,6 +11,7 @@ import utilities.ReusableMethods;
 public class C07_CheckBoxTest {
     @Test
     public void test01(){
+
         //	a. Verilen web sayfasına gidin.
         //	     https://testotomasyonu.com/form
         Driver.getDriver().get("https://testotomasyonu.com/form");
