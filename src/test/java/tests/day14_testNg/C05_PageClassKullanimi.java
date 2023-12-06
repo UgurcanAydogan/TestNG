@@ -1,4 +1,4 @@
-package day14_testNg;
+package tests.day14_testNg;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;

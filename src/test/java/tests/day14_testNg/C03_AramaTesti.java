@@ -1,4 +1,4 @@
-package day14_testNg;
+package tests.day14_testNg;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
