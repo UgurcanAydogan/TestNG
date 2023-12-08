@@ -20,6 +20,7 @@ public class C02_SoftAssertion {
 
         // 2. webbappsecurity ana sayafaya gittiginizi dogrulayin
         SoftAssert softAssert = new SoftAssert();
+
         String expectedUrl = "http://zero.webappsecurity.com/";
         String actualUrl = Driver.getDriver().getCurrentUrl();
         softAssert.assertEquals(actualUrl,expectedUrl,"Anasayfada degiliz");
