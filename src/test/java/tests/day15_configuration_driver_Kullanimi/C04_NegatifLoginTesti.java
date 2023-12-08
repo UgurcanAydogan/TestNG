@@ -18,10 +18,11 @@ public class C04_NegatifLoginTesti {
     //4- Login butonuna basarak login olun
     //5- Basarili olarak giris yapilamadigini test edin
 
-    @Test
+    @Test (groups = "smoke")
     public void gecersizPasswordTesti(){
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
+        ReusableMethods.bekle(1);
 
         // 2- account linkine basin
         TestOtomasyonuPage testOtomasyonuPage = new TestOtomasyonuPage();
@@ -33,6 +34,7 @@ public class C04_NegatifLoginTesti {
         testOtomasyonuPage.passwordKutusu.sendKeys(ConfigReader.getProperty("toGecersizPassword"));
 
         //4- Login butonuna basarak login olun
+        ReusableMethods.bekle(1);
         testOtomasyonuPage.loginButonu.click();
 
         //5- Basarili olarak giris yapilamadigini test edin
@@ -41,10 +43,11 @@ public class C04_NegatifLoginTesti {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = "regression")
     public void gecersizEmailTesti(){
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
+        ReusableMethods.bekle(1);
 
         // 2- account linkine basin
         TestOtomasyonuPage testOtomasyonuPage = new TestOtomasyonuPage();
@@ -56,6 +59,7 @@ public class C04_NegatifLoginTesti {
         testOtomasyonuPage.passwordKutusu.sendKeys(ConfigReader.getProperty("toGecerliPassword"));
 
         //4- Login butonuna basarak login olun
+        ReusableMethods.bekle(1);
         testOtomasyonuPage.loginButonu.click();
 
         //5- Basarili olarak giris yapilamadigini test edin
@@ -64,10 +68,11 @@ public class C04_NegatifLoginTesti {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(priority = 5)
     public void gecersizEmailGecersizPasswordTesti(){
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
+        ReusableMethods.bekle(1);
 
         // 2- account linkine basin
         TestOtomasyonuPage testOtomasyonuPage = new TestOtomasyonuPage();
@@ -79,6 +84,7 @@ public class C04_NegatifLoginTesti {
         testOtomasyonuPage.passwordKutusu.sendKeys(ConfigReader.getProperty("toGecersizPassword"));
 
         //4- Login butonuna basarak login olun
+        ReusableMethods.bekle(1);
         testOtomasyonuPage.loginButonu.click();
 
         //5- Basarili olarak giris yapilamadigini test edin
