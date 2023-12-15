@@ -80,7 +80,7 @@ public class C01_SoftAssertion {
 
         bulunanSonucSayisi = testOtomasyonuPage.bulunanUrunElementleriList.size();
 
-        softAssert.assertTrue(bulunanSonucSayisi==0,"Nutella bulundu");
+        softAssert.assertTrue(bulunanSonucSayisi==0,"Nutella bulundunamadı");
 
         softAssert.assertAll();
 
